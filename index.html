@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="stepControlBtn">
+        <button id="formbtn">Form</button>
+        <button id="Calculatorbtn">Calculator</button>
+    </div>
+    <div class="container" id="formSection">
+        <form>
+            <div id="form1">
+                <div class="step-col">step 1</div>
+                <h1>Personal Infromation</h1>
+                <div><label for="fname">First Name</label>
+                    <input type="text" name="fname" id="firstName" placeholder="Enter First Name">
+                </div>
+                <span id="fnameerror" style="color:rgb(250, 8, 8)"></span>
+                <br>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lastName" placeholder="Enter Last Name">
+                </div>
+                <span id="lnameerror" style="color:rgb(250, 8, 8)"></span>
+                <br><br>
+                <button type="button" id="Next1">Next</button>
+            </div>
+
+
+            <!-- ---------Account Information Section  -->
+
+            <div id="form2">
+                <div class="step-col">step 2</div>
+                <h1>Account Information</h1>
+                <div>
+                    <label for="Email"> Email</label>
+                    <input type="text" name="Email" id="email" placeholder="Enter Email Address">
+                </div>
+                <span id="emailerror" style="color:rgb(250, 8, 8)"> </span>
+                <br>
+                <div>
+                    <label for="Password">Password</label>
+                    <div class="password-container">
+                        <input type="password" name="Password" id="password" placeholder="Enter Password">
+                        <span class="span1"><i class="fa-solid fa-eye-slash"></i></span>
+                        <span class="span2"><i class="fa-solid fa-eye"></i></span>
+                    </div>
+                </div>
+                <span id="passworderror" style="color:rgb(250, 8, 8); display:block; margin-top:5px;"></span>
+
+                <br><br>
+
+                <div class="btnform">
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="Next2">Next</button>
+                </div>
+            </div>
+
+            <!-- ---------Company Details Section  -->
+
+            <div id="form3">
+                <div class="step-col">step 3</div>
+                <h1>Company Details</h1>
+                <div class="details">
+                    <label for="company Name">Company Name</label>
+                    <input type="text" name="comapanyName" id="CompanyName" placeholder="Enter Company Name">
+                </div>
+                <span id="companyerror" style="color:rgb(250, 8, 8)"></span>
+                <br>
+                <div>
+                    <label for="Designation">Designation</label>
+                    <input type="text" name="Designation" id="designation" placeholder="Enter Designation">
+                </div>
+                <span id="designationerror" style="color:rgb(250, 8, 8)"></span>
+                <br><br>
+                <div class="btnform">
+                    <button type="button" id="back2">Back</button>
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+        </div>
+        <div class="StoreData"></div>
+    </div>
+
+
+    <!-- ------------------ Calculator Section -->
+    <section id="calculatorSection">
+        <div id="btnContainer">
+            <input type="text" id="showInput" placeholder="0" readonly>
+            <div id="allbtnContiner">
+                <button class="operator" id="btn-1">C</button>
+                <button class="operator btn-2">AC</button>
+                <button id="btn-3">Mean</button>
+                <button class="operator" id="btn-4">%</button>
+                <button class="btn btn-5">7</button>
+                <button class="btn btn-6">8</button>
+                <button class="btn btn-7">9</button>
+                <button class="operator btn-8">/</button>
+                <button class="btn btn-9">5</button>
+                <button class="btn btn-10">6</button>
+                <button class="btn btn-11">4</button>
+                <button class="operator btn-12">*</button>
+                <button class="btn btn-12">3</button>
+                <button class="btn btn-14">2</button>
+                <button class="btn btn-15">1</button>
+                <button class="operator btn-16">-</button>
+                <button class="btn btn-17">0</button>
+                <button class="operator btn-18">(</button>
+                <button class="operator btn-19">)</button>
+                <button class="operator btn-19">+</button>
+                <button class="operator btn-20">.</button>
+                <button class="  btn btn-21">,</button>
+                <button class="equalbtn btn-22">=</button>
+
+            </div>
+        </div>
+        <div id="outputScreen">
+            <div id="showOutput">
+                <div id="output">Output</div>
+                <div id="displayClear">Display Clear</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

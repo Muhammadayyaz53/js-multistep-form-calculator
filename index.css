@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #111;
+}
+
+/* Top Control Buttons */
+#stepControlBtn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#stepControlBtn button {
+  width: 130px;
+  height: 45px;
+  margin: 0 10px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: #38bdf8;
+  color: #020617;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#stepControlBtn button:hover {
+  background: #0284c7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Form Container */
+.container {
+  background: #f8fafc;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Form Sections Animation */
+#form1,
+#form2,
+#form3 {
+  animation: fadeSlide 0.4s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Step & Title */
+.step-col {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0284c7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Inputs & Labels*/
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+/* Error Messages (RED)*/
+#fnameerror,
+#lnameerror,
+#emailerror,
+#passworderror,
+#companyerror,
+#designationerror {
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Password Eye Icons*/
+.password-container {
+  position: relative;
+}
+
+.span1,
+.span2 {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #475569;
+}
+
+/* Buttons*/
+button {
+  padding: 8px 22px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background: #0284c7;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0369a1;
+  transform: translateY(-1px);
+}
+
+.btnform {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Stored Data*/
+.StoreData {
+  margin-top: 30px;
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.StoreData li {
+  list-style: none;
+  line-height: 1.7;
+  padding: 10px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Calculator Layout*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+/* Calculator Body*/
+#btnContainer {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  width: 400px;
+}
+
+/* Calculator Display */
+#showInput {
+  width: 100%;
+  height: 70px;
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #020617;
+  color: #f8fafc;
+  text-align: right;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Calculator Buttons*/
+#allbtnContiner {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn,
+.operator,
+.equalbtn {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  background: #e2e8f0;
+}
+
+.operator {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.equalbtn {
+  background: #16a34a;
+  color: #fff;
+  grid-column: span 2;
+}
+
+.btn:hover,
+.operator:hover,
+.equalbtn:hover {
+  filter: brightness(0.9);
+}
+
+/* Output / History Screen */
+#outputScreen {
+  background: #020617;
+  width: 380px;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+#output::before {
+  content: "Calculation History";
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+#output {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+#output li {
+  background: #1e293b;
+  color: #f8fafc;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  border-left: 4px solid #38bdf8;
+}
+
+/* Clear History Button*/
+#displayClear {
+  margin-top: 15px;
+  background: #dc2626;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#displayClear:hover {
+  background: #b91c1c;
+}
+
+/* Responsive Design*/
+@media (max-width: 992px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #btnContainer,
+  #outputScreen {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #stepControlBtn button {
+    width: 110px;
+    font-size: 14px;
+  }
+}
