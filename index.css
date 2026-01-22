@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: "Segoe UI", Tahoma, sans-serif;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #111;
 }
 
-/* Top Control Buttons */
+/* TOP CONTROL BUTTONS */
 #stepControlBtn {
   margin-top: 60px;
   text-align: center;
@@ -36,7 +37,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Form Container */
+/* FORM CONTAINER */
 .container {
   background: #f8fafc;
   max-width: 600px;
@@ -46,25 +47,7 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
-/* Form Sections Animation */
-#form1,
-#form2,
-#form3 {
-  animation: fadeSlide 0.4s ease;
-}
-
-@keyframes fadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Step & Title */
+/* STEP & TITLE */
 .step-col {
   font-size: 18px;
   font-weight: 600;
@@ -79,7 +62,7 @@ h1 {
   font-size: 26px;
 }
 
-/* Inputs & Labels*/
+/* INPUTS & LABELS */
 label {
   font-weight: 600;
   display: block;
@@ -106,7 +89,7 @@ input::placeholder {
   color: #94a3b8;
 }
 
-/* Error Messages (RED)*/
+/* ERROR MESSAGES */
 #fnameerror,
 #lnameerror,
 #emailerror,
@@ -120,7 +103,7 @@ input::placeholder {
   margin-bottom: 8px;
 }
 
-/* Password Eye Icons*/
+/* PASSWORD ICON */
 .password-container {
   position: relative;
 }
@@ -135,7 +118,7 @@ input::placeholder {
   color: #475569;
 }
 
-/* Buttons*/
+/* FORM BUTTONS */
 button {
   padding: 8px 22px;
   font-size: 15px;
@@ -158,7 +141,7 @@ button:hover {
   margin-top: 10px;
 }
 
-/* Stored Data*/
+/* STORED DATA */
 .StoreData {
   margin-top: 30px;
   background: #e2e8f0;
@@ -174,7 +157,7 @@ button:hover {
   border-bottom: 1px solid #cbd5e1;
 }
 
-/* Calculator Layout*/
+/* CALCULATOR LAYOUT */
 section {
   display: flex;
   justify-content: center;
@@ -184,16 +167,16 @@ section {
   padding-bottom: 50px;
 }
 
-/* Calculator Body*/
+/* CALCULATOR BODY  */
 #btnContainer {
-  background: #f8fafc;
+  background: #020617;
   padding: 20px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   width: 400px;
 }
 
-/* Calculator Display */
+/* CALCULATOR DISPLAY */
 #showInput {
   width: 100%;
   height: 70px;
@@ -201,14 +184,14 @@ section {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  background: #020617;
+  background: #0f172a;
   color: #f8fafc;
   text-align: right;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-/* Calculator Buttons*/
+/* CALCULATOR BUTTONS */
 #allbtnContiner {
   margin-top: 15px;
   display: grid;
@@ -226,18 +209,25 @@ section {
   cursor: pointer;
 }
 
+/* NUMBER BUTTONS */
 .btn {
-  background: #e2e8f0;
+  background: #1e293b;
+  color: #ffffff;
+  font-weight: 600;
 }
 
+/* OPERATOR BUTTONS */
 .operator {
   background: #38bdf8;
   color: #020617;
+  font-weight: 700;
 }
 
+/* EQUAL BUTTON */
 .equalbtn {
-  background: #16a34a;
-  color: #fff;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
   grid-column: span 2;
 }
 
@@ -247,7 +237,7 @@ section {
   filter: brightness(0.9);
 }
 
-/* Output / History Screen */
+/*  OUTPUT HISTORY */
 #outputScreen {
   background: #020617;
   width: 380px;
@@ -281,7 +271,7 @@ section {
   border-left: 4px solid #38bdf8;
 }
 
-/* Clear History Button*/
+/* CLEAR HISTORY BUTTON */
 #displayClear {
   margin-top: 15px;
   background: #dc2626;
@@ -297,7 +287,7 @@ section {
   background: #b91c1c;
 }
 
-/* Responsive Design*/
+/* RESPONSIVE*/
 @media (max-width: 992px) {
   section {
     flex-direction: column;
